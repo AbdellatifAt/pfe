@@ -1,0 +1,155 @@
+.form-inscription{
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color :#B4CBCB;
+    padding: 40px 0;
+    
+    
+}
+
+.decorated select{
+  width: 500px;
+  height: 30px;
+  border: none;
+  outline: 2px solid #ccc;
+
+}
+
+.selectMultiple select{
+  width: 500px;
+  border: none;
+  outline: 2px solid #ccc;
+}
+.InscriptionContainer{
+  width:100%;
+  height: 60vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+/*  */
+
+.btn__insciption {
+  --color:  #61A4C7;
+  --color2:#fff;
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid var(--color);
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+  width: 200px;
+ }
+ 
+ .btn__insciption::after, .btn__insciption::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: .5s ease-out;
+  background-color: var(--color);
+ }
+ 
+ .btn__insciption::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+ }
+ 
+ .btn__insciption:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+ }
+ 
+ .btn__insciption:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+ }
+ 
+ .btn__insciption:hover {
+  color: var(--color2);
+ }
+ 
+ .btn__insciption:active {
+  filter: brightness(.7);
+  transform: scale(.98);
+ }
+ 
+ /*  */
+
+ .Content_btn_inscription_file{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ }
+
+
+
+
+
+
+
+/*   
+  .box select {
+    background-color: #4ca9c5;
+    color: white;
+    padding: 6px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .box::before {
+    content: "";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+  }
+  
+  .box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .box select option {
+    padding: 20px;
+  }
+
+   */
+
+
+ 
