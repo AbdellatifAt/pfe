@@ -120,8 +120,11 @@ body {
     outline: none;
     
 }
-.option-inp{
+/* .option-inp{
     background-color: #234567;
+} */
+.label-select{
+    text-align: start;
 }
 
 .label-select select{

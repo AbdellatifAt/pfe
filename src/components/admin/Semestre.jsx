@@ -33,6 +33,7 @@ const Semestre = () => {
 const HandlSubmit = async(e)=>{
         e.preventDefault();
         const cls = document.querySelector('.close-btn');
+        const reset = document.querySelector('#reset_form_module');
         const formData = new FormData(e.target);
         //console.log(formData);
         if (operation === 'ajouter') {
@@ -45,7 +46,9 @@ const HandlSubmit = async(e)=>{
                         if(res.status === 200){
                             setSemester([...semester,resJson]);
                             console.log(resJson);
+                            reset.click();
                             cls.click();
+
                             dispatch(setNotificationOn({
                                 message: 'Insertion avec succés',
                                 time: 3000,
@@ -208,6 +211,7 @@ const open_modale=()=>{
                         </div>
                          
                          <input className="hidden_el" type="text" name="id_semester"  />
+                         <input hidden id="reset_form_module" type="reset" />
                         
                     </form>
                         <button className="close-btn" onClick={onClose}><i className="fa fa-times" aria-hidden="true"></i></button>

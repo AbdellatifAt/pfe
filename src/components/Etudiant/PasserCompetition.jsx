@@ -234,6 +234,7 @@ const PasserCompetition = () => {
                 {
                     problems.map((P,i)=>{
                         return <div className="problem_etud" key={i}>
+                                    <h3 className="desCription_problem_etud">{P.description}</h3>
                                     <embed src={API_URL+P.file} width="800" height="400" type='application/pdf'/>
                                     <form  onSubmit={HandlSubmit} encType="multipart/form-data" >
 

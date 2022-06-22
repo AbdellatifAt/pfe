@@ -510,7 +510,7 @@ const afficherResultatCompetition = ()=>{
 
                         
                         <div className="btn-validation-test-etud">
-                            <button style={{right:'70px'}} onClick={go_back} className="btn_back">
+                            <button style={{right:'70px',backgroundColor:'#ccc'}} onClick={go_back} className="btn_back">
                                 <span className="btn-text-one">Go</span>
                                 <span className="btn-text-two">Back</span>
                             </button>

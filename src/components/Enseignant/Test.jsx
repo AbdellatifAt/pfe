@@ -644,7 +644,7 @@ const file_import = (e)=>{
 
                             
                          <div className="btn-lancre-test">
-                            { !testIslanced  &&
+                            { !testIslanced  && question.length>0 &&
                            <div className="btn-lancer-test">
                                 <button onClick={open_modale} className="cta">
                                     <span>Lancer Le Test</span>

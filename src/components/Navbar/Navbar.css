@@ -33,3 +33,8 @@
 .active{
     color:cornflowerblue;
 }
+
+.log-out-btn-nav:hover{
+    color: brown;
+    transform: scale(1.2);
+}

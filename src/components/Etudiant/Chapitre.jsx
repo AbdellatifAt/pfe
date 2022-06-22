@@ -5,7 +5,7 @@ import { API_URL } from "../../ApI/api";
 
 const Chapitre = () => {
     const {id_module} = useParams()
-    const [chapitre , setChapitre] = useState();
+    const [chapitre , setChapitre] = useState([]);
     useEffect(()=>{
         fetch( API_URL+'/Etudiant/Chapitres.php?id_module='+id_module)
         .then(res=>{
@@ -29,7 +29,7 @@ const Chapitre = () => {
 
     return ( 
        (
-        chapitre && 
+        chapitre.length >0 && 
            <div  className="global_Content" >
                <div className="parent_content">
 

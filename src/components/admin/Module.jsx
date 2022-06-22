@@ -364,7 +364,7 @@ const handleClear = () => {
                 
                              </div>
 
-                            <label className="label-select" >
+                            <label className="label-select" >Enseignant </label> 
                                 <select name="id_enseignant" className="select-inp" >
                                     {
                                         Ens.map((E,i)=>(
@@ -373,10 +373,10 @@ const handleClear = () => {
                                     }
                                 </select>
                             
-                            </label>       
+                                  
                             
-                            <label > Semestre</label> 
-                            <select className="selectEns" name="id_semester">
+                            <label className="label-select" > Semestre</label> 
+                            <select className="selectEns select-inp" name="id_semester">
                                 {
                                     semester.map((S,i)=>(
                                         <option key={i} value={S.id_semester}>{S.nom}</option>

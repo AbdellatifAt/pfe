@@ -9,6 +9,7 @@ import { setUser } from '../../redux/user/user.actions';
 
 function LoginPage() {
   const [utilisateur , setUtilisateur] = useState('etudiant') ; 
+  const [erreur , setErreur] = useState('');
 
   const dispatch = useDispatch()
 
@@ -39,6 +40,7 @@ const HandlSubmit = async(e)=>{
                   }
                   else{
                       console.log(resJson);
+                      setErreur('informations incorrectes')
                   }
          }
          catch(err){
@@ -62,6 +64,7 @@ const HandlSubmit = async(e)=>{
 
               }else{
                   console.log(resJson);
+                  setErreur('informations incorrectes')
               }
       }
       catch(err){
@@ -111,8 +114,8 @@ const HandlSubmit = async(e)=>{
                         <h2>Se Connecter </h2>
                             <div className="forme">
                                 <form onSubmit={HandlSubmit}>
-                                    <div>
-                                      
+                                    <div className='erreurAuthentification'>
+                                    {erreur}
                                     </div>
                                     <input type="text" name="user_name" id="email" placeholder="Email" />
                                     <input type="password" name="password" id="psw" placeholder="password"/>

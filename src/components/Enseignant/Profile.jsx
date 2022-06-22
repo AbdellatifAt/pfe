@@ -142,7 +142,7 @@ const resetInpu =()=>{
                                         <label >nouveau mot de passe</label>
                                     </div>
                                     <div className="input-box">
-                                        <input type="test"  name="confirmation_password" required/>
+                                        <input type="password"  name="confirmation_password" required/>
                                         <label >confirme mot de passe</label>
                                     </div>
 
